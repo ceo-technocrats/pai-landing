@@ -1,0 +1,6 @@
+*.docx
+*.pdf
+*.tmp
+.DS_Store
+.claude/
+.~lock.*
