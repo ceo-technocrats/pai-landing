@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAI 기능 소개 — 의정 AI 에이전트의 역량</title>
+  <title>파이 기능 소개 — 의정 AI 에이전트의 역량</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%234c1d95'/><line x1='22.5' y1='7.5' x2='9.5' y2='24.5' stroke='white' stroke-width='3.5' stroke-linecap='round'/></svg>">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
   <style>
@@ -40,7 +40,7 @@
     }
     .nav-logo a { display: flex; align-items: center; gap: 0.45rem; text-decoration: none; }
     .nav-logo-icon { width: 26px; height: 26px; flex-shrink: 0; }
-    .nav-logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: -0.5px; color: var(--black); }
+    .nav-logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: 0.12em; color: var(--black); }
     .nav-links { display: flex; align-items: center; gap: 2rem; }
     .nav-links a {
       font-size: 0.875rem; font-weight: 600; color: var(--text2);
@@ -486,21 +486,23 @@
       max-width: var(--max-w); margin: 0 auto;
       display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem;
     }
-    .footer-logo { font-size: 1.45rem; font-weight: 900; margin-bottom: 0.75rem; color: #ffffff; }
-    .footer-desc { font-size: 0.875rem; color: #888888; line-height: 1.7; }
+    .footer-logo { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.9rem; }
+    .footer-logo-icon { width: 28px; height: 28px; flex-shrink: 0; }
+    .footer-logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: 0.12em; color: #ffffff; }
+    .footer-desc { font-size: 0.875rem; color: #888888; line-height: 1.8; }
+    .footer-biz { margin-top: 0.6rem; font-size: 0.75rem; color: #555555; line-height: 1.8; }
     .footer-col h4 {
       font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
       text-transform: uppercase; color: #666666; margin-bottom: 1rem;
     }
     .footer-col ul { list-style: none; }
-    .footer-col ul li { margin-bottom: 0.5rem; }
+    .footer-col ul li { margin-bottom: 0.5rem; font-size: 0.875rem; color: #888888; }
     .footer-col ul li a { color: #888888; text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
     .footer-col ul li a:hover { color: #ffffff; }
     .footer-bottom {
       max-width: var(--max-w); margin: 2rem auto 0;
       padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08);
-      display: flex; align-items: center; justify-content: space-between;
-      font-size: 0.78rem; color: #666666;
+      text-align: center; font-size: 0.78rem; color: #555555;
     }
     .footer-links { display: flex; gap: 1.5rem; }
     .footer-links a { color: #666666; text-decoration: none; transition: color 0.2s; }
@@ -634,7 +636,7 @@
     </h1>
     <p class="page-hero-sub" data-aos data-aos-delay="2">
       물어보시기만 하면 됩니다.<br>
-      PAI는 의정활동에 필요한 모든 데이터를 알고 있습니다.
+      파이는 의정활동에 필요한 모든 데이터를 알고 있습니다.
     </p>
     <div class="page-hero-ctas" data-aos data-aos-delay="3">
       <a href="index.html#cta" class="btn-primary">도입 문의</a>
@@ -652,7 +654,7 @@
       <div class="section-label" data-aos>지원 규모</div>
       <h2 class="section-headline" data-aos data-aos-delay="1">수천 명 지원관의 힘을 가진,<br>단 하나의 AI 에이전트</h2>
       <p class="section-sub" style="margin:0.5rem auto 0;text-align:center;" data-aos data-aos-delay="2">
-        지방의회법상 정책지원관은 의원 2명당 최대 1명.<br>PAI는 그 한 명의 자리에서, 수천 명의 역량으로 일합니다.
+        지방의회법상 정책지원관은 의원 2명당 최대 1명.<br>파이는 그 한 명의 자리에서, 수천 명의 역량으로 일합니다.
       </p>
     </div>
 
@@ -673,7 +675,7 @@
       </div>
 
       <div class="comp-col ai-col">
-        <div class="comp-title"><span>AI 에이전트 (PAI)</span></div>
+        <div class="comp-title"><span>AI 에이전트 (파이)</span></div>
         <div class="comp-role">수천 명의 역량 — 24시간, 어디서나</div>
         <ul class="comp-list">
           <li>전국 15만 조례 즉시 검색 및 비교</li>
@@ -684,10 +686,6 @@
       </div>
     </div>
 
-    <div class="complement-message" data-aos>
-      <strong>"지원관 1명이어도, 수천 명의 역량이 생깁니다."</strong><br>
-      언제 어디서나, 24시간 — 조사와 초안은 AI가, 판단과 관계는 사람이 맡습니다.
-    </div>
   </div>
 </section>
 
@@ -829,7 +827,7 @@
             <div class="chat-bubble user-b" style="font-size:0.72rem;">청년 인구 유출 이슈 브리핑해줘</div>
           </div>
           <div class="chat-msg">
-            <div class="chat-avatar ai">PAI</div>
+            <div class="chat-avatar ai">파이</div>
             <div class="chat-bubble" style="font-size:0.72rem;">
               <strong>○○시 청년 현황 브리핑</strong><br>
               · 20-30대 비율 전년 대비 <strong>−2.1%p</strong><br>
@@ -998,7 +996,7 @@
     </div>
 
     <div class="alerts-message" data-aos>
-      물어보기 전에 챙겨드립니다. <em>그것이 PAI의 일입니다.</em>
+      물어보기 전에 챙겨드립니다. <em>그것이 파이의 일입니다.</em>
     </div>
   </div>
 </section>
@@ -1093,10 +1091,6 @@
         <div class="security-desc">SaaS 방식. 서버 설치 없음. 의회 IT팀 개입 불필요.</div>
       </div>
     </div>
-    <div class="security-quote" data-aos>
-      <p>"내가 하고 있는 걸 오픈하는 걸 별로 안 좋아하시는 경향이 있어요."</p>
-      <cite>— 정책지원관 인터뷰 중</cite>
-    </div>
   </div>
 </section>
 
@@ -1172,11 +1166,14 @@
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-logo">PAI</div>
-      <div class="footer-desc">
-        지방의회를 위한 의정 특화 AI.<br>
-        Technocrats가 만들고, 현장이 검증합니다.
+      <div class="footer-logo">
+        <svg class="footer-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#4c1d95"/><line x1="22.5" y1="7.5" x2="9.5" y2="24.5" stroke="white" stroke-width="3.5" stroke-linecap="round"/></svg>
+        <span class="footer-logo-text">PAI</span>
       </div>
+      <div class="footer-desc">
+        국내 최초 의정용 AI 에이전트
+      </div>
+
     </div>
     <div class="footer-col">
       <h4>제품</h4>
@@ -1190,18 +1187,17 @@
     <div class="footer-col">
       <h4>연락처</h4>
       <ul>
+        <li>(주)테크노크라츠</li>
+        <li>대표이사 유민승</li>
+        <li>사업자등록번호 684-88-03424</li>
+        <li>경기도 용인시 수지구 호수로 132번길</li>
         <li><a href="mailto:hello@technocrats.kr">hello@technocrats.kr</a></li>
-        <li><a href="tel:000-0000-0000">000-0000-0000</a></li>
-        <li><a href="#">서울특별시 ○○구</a></li>
+        <li><a href="tel:01053078128">010-5307-8128</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <div>© 2026 Technocrats. All rights reserved.</div>
-    <div class="footer-links">
-      <a href="#">개인정보처리방침</a>
-      <a href="#">이용약관</a>
-    </div>
+    <span>© 2026 Technocrats Inc. All rights reserved.</span>
   </div>
 </footer>
 

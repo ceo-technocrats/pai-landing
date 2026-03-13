@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAI 가격 — 의정 특화 AI 에이전트</title>
+  <title>파이 가격 — 의정 특화 AI 에이전트</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%234c1d95'/><line x1='22.5' y1='7.5' x2='9.5' y2='24.5' stroke='white' stroke-width='3.5' stroke-linecap='round'/></svg>">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
   <style>
@@ -40,7 +40,7 @@
     }
     .nav-logo a { display: flex; align-items: center; gap: 0.45rem; text-decoration: none; }
     .nav-logo-icon { width: 26px; height: 26px; flex-shrink: 0; }
-    .nav-logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: -0.5px; color: var(--black); }
+    .nav-logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: 0.12em; color: var(--black); }
     .nav-links { display: flex; align-items: center; gap: 2rem; }
     .nav-links a {
       font-size: 0.875rem; font-weight: 600; color: var(--text2);
@@ -322,21 +322,23 @@
       max-width: var(--max-w); margin: 0 auto;
       display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem;
     }
-    .footer-logo { font-size: 1.45rem; font-weight: 900; margin-bottom: 0.75rem; color: #ffffff; }
-    .footer-desc { font-size: 0.875rem; color: #888888; line-height: 1.7; }
+    .footer-logo { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.9rem; }
+    .footer-logo-icon { width: 28px; height: 28px; flex-shrink: 0; }
+    .footer-logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: 0.12em; color: #ffffff; }
+    .footer-desc { font-size: 0.875rem; color: #888888; line-height: 1.8; }
+    .footer-biz { margin-top: 0.6rem; font-size: 0.75rem; color: #555555; line-height: 1.8; }
     .footer-col h4 {
       font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
       text-transform: uppercase; color: #666666; margin-bottom: 1rem;
     }
     .footer-col ul { list-style: none; }
-    .footer-col ul li { margin-bottom: 0.5rem; }
+    .footer-col ul li { margin-bottom: 0.5rem; font-size: 0.875rem; color: #888888; }
     .footer-col ul li a { color: #888888; text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
     .footer-col ul li a:hover { color: #ffffff; }
     .footer-bottom {
       max-width: var(--max-w); margin: 2rem auto 0;
       padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08);
-      display: flex; align-items: center; justify-content: space-between;
-      font-size: 0.78rem; color: #666666;
+      text-align: center; font-size: 0.78rem; color: #555555;
     }
     .footer-links { display: flex; gap: 1.5rem; }
     .footer-links a { color: #666666; text-decoration: none; transition: color 0.2s; }
@@ -398,7 +400,7 @@
       당신만의 의정 AI 에이전트,<br><em>비용은 얼마일까요?</em>
     </h1>
     <p class="page-hero-sub" data-aos data-aos-delay="2">
-      PAI는 의원 1인 기준 월 18만원부터 시작합니다.<br>
+      파이는 의원 1인 기준 월 18만원부터 시작합니다.<br>
       인건비의 몇 분의 일로, 수천 명 지원관의 역량을.
     </p>
     <div class="page-hero-ctas" data-aos data-aos-delay="3">
@@ -513,17 +515,17 @@
           <span class="faq-chevron">＋</span>
         </button>
         <div class="faq-a">
-          <p>ChatGPT는 범용 AI입니다. 우리 의회 회의록, 전국 자치법규, 지역 행정 데이터를 알지 못합니다. PAI는 지방의회 특화 데이터와 실시간으로 연결되어 있어 범용 AI가 할 수 없는 작업을 제공합니다. 전국 유사 조례 비교, 과거 발언 검색, 의정 문서 자동 생성이 그것입니다. "어디서나 쓰는 AI"가 아닌, "의회에서만 작동하는 AI"입니다.</p>
+          <p>ChatGPT는 범용 AI입니다. 우리 의회 회의록, 전국 자치법규, 지역 행정 데이터를 알지 못합니다. 파이는 지방의회 특화 데이터와 실시간으로 연결되어 있어 범용 AI가 할 수 없는 작업을 제공합니다. 전국 유사 조례 비교, 과거 발언 검색, 의정 문서 자동 생성이 그것입니다. "어디서나 쓰는 AI"가 아닌, "의회에서만 작동하는 AI"입니다.</p>
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
-          <span>PAI가 도입되면 정책지원관이 필요 없어지나요?</span>
+          <span>파이가 도입되면 정책지원관이 필요 없어지나요?</span>
           <span class="faq-chevron">＋</span>
         </button>
         <div class="faq-a">
-          <p>아닙니다. PAI는 정책지원관의 하루에서 검색과 초안 작업 시간을 줄여줍니다. 정치적 판단, 지역 주민과의 관계 관리, 현장 대응은 사람만 할 수 있는 영역입니다. PAI와 함께하는 지원관들은 "이제 진짜 일을 할 수 있게 됐다"는 반응을 보입니다. 대체가 아니라 강화입니다. <a href="features.html#complement">역할 분담 자세히 보기 →</a></p>
+          <p>아닙니다. 파이는 정책지원관의 하루에서 검색과 초안 작업 시간을 줄여줍니다. 정치적 판단, 지역 주민과의 관계 관리, 현장 대응은 사람만 할 수 있는 영역입니다. 파이와 함께하는 지원관들은 "이제 진짜 일을 할 수 있게 됐다"는 반응을 보입니다. 대체가 아니라 강화입니다. <a href="features.html#complement">역할 분담 자세히 보기 →</a></p>
         </div>
       </div>
 
@@ -569,11 +571,11 @@
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
-          <span>PAI가 제공하는 데이터는 신뢰할 수 있나요?</span>
+          <span>파이가 제공하는 데이터는 신뢰할 수 있나요?</span>
           <span class="faq-chevron">＋</span>
         </button>
         <div class="faq-a">
-          <p>PAI는 추측이나 일반 지식 기반이 아닌, 공식 공공 출처의 데이터를 직접 인덱싱하여 사용합니다. 조례 검색은 전국 자치법규정보시스템(ELIS) 데이터를 기반으로 하며, 회의록 검색은 각 의회가 제공하는 공식 회의록을 토대로 합니다. AI가 답변할 때는 출처 문서를 함께 표시하므로, 어떤 근거로 답변했는지 바로 확인하실 수 있습니다. 범용 AI처럼 없는 정보를 만들어내는 '환각' 위험을 최소화하기 위해 RAG(검색 기반 생성) 방식으로 작동합니다.</p>
+          <p>파이는 추측이나 일반 지식 기반이 아닌, 공식 공공 출처의 데이터를 직접 인덱싱하여 사용합니다. 조례 검색은 전국 자치법규정보시스템(ELIS) 데이터를 기반으로 하며, 회의록 검색은 각 의회가 제공하는 공식 회의록을 토대로 합니다. AI가 답변할 때는 출처 문서를 함께 표시하므로, 어떤 근거로 답변했는지 바로 확인하실 수 있습니다. 범용 AI처럼 없는 정보를 만들어내는 '환각' 위험을 최소화하기 위해 RAG(검색 기반 생성) 방식으로 작동합니다.</p>
         </div>
       </div>
 
@@ -583,7 +585,7 @@
           <span class="faq-chevron">＋</span>
         </button>
         <div class="faq-a">
-          <p>네, 가능합니다. 도입 문의를 신청하시면 귀 의회의 실제 데이터를 활용한 30분 맞춤 시연을 진행합니다. 범용 데모가 아니라, 실제 귀 의회의 회의록과 조례 데이터를 사용해 PAI가 어떻게 작동하는지 직접 보실 수 있습니다. 시연 이후 도입 여부를 결정하셔도 늦지 않습니다.</p>
+          <p>네, 가능합니다. 도입 문의를 신청하시면 귀 의회의 실제 데이터를 활용한 30분 맞춤 시연을 진행합니다. 범용 데모가 아니라, 실제 귀 의회의 회의록과 조례 데이터를 사용해 파이가 어떻게 작동하는지 직접 보실 수 있습니다. 시연 이후 도입 여부를 결정하셔도 늦지 않습니다.</p>
         </div>
       </div>
 
@@ -593,7 +595,7 @@
           <span class="faq-chevron">＋</span>
         </button>
         <div class="faq-a">
-          <p>어떤 AI도 100% 정확을 보장하지 않으며, PAI도 마찬가지입니다. 다만 PAI는 이 위험을 최소화하기 위한 두 가지 설계 원칙을 따릅니다. 첫째, 답변과 함께 원문 출처를 항상 제공합니다. 의원·지원관이 직접 원문을 확인하고 최종 판단하는 구조입니다. 둘째, 범용 AI처럼 데이터가 없는 내용을 지어내는 대신, 실제 문서가 존재할 때만 답변하도록 설계했습니다. PAI는 최종 결정자가 아니라, 정보 탐색과 초안 작업을 빠르게 해주는 보조 도구로 사용하시길 권장합니다.</p>
+          <p>어떤 AI도 100% 정확을 보장하지 않으며, 파이도 마찬가지입니다. 다만 파이는 이 위험을 최소화하기 위한 두 가지 설계 원칙을 따릅니다. 첫째, 답변과 함께 원문 출처를 항상 제공합니다. 의원·지원관이 직접 원문을 확인하고 최종 판단하는 구조입니다. 둘째, 범용 AI처럼 데이터가 없는 내용을 지어내는 대신, 실제 문서가 존재할 때만 답변하도록 설계했습니다. 파이는 최종 결정자가 아니라, 정보 탐색과 초안 작업을 빠르게 해주는 보조 도구로 사용하시길 권장합니다.</p>
         </div>
       </div>
 
@@ -603,7 +605,7 @@
           <span class="faq-chevron">＋</span>
         </button>
         <div class="faq-a">
-          <p>합성여론은 현재 베타 테스트 단계로, 일반 출시 전 파일럿 의회에서 선행 체험이 가능합니다. 도입 문의를 신청하시면 시연 시 합성여론 기능도 함께 체험하실 수 있습니다. 전문 리서치 기관에 의뢰 시 수천만원·수주 이상 소요되던 여론 시뮬레이션을, PAI에서는 조례안·발의문을 입력하는 것만으로 수초 내에 모의 결과를 확인하실 수 있습니다. 정식 출시 전 알림을 받고 싶으시면 도입 문의 폼에 관심 내용을 남겨주세요.</p>
+          <p>합성여론은 현재 베타 테스트 단계로, 일반 출시 전 파일럿 의회에서 선행 체험이 가능합니다. 도입 문의를 신청하시면 시연 시 합성여론 기능도 함께 체험하실 수 있습니다. 전문 리서치 기관에 의뢰 시 수천만원·수주 이상 소요되던 여론 시뮬레이션을, 파이에서는 조례안·발의문을 입력하는 것만으로 수초 내에 모의 결과를 확인하실 수 있습니다. 정식 출시 전 알림을 받고 싶으시면 도입 문의 폼에 관심 내용을 남겨주세요.</p>
         </div>
       </div>
 
@@ -640,11 +642,14 @@
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-logo">PAI</div>
-      <div class="footer-desc">
-        지방의회를 위한 의정 특화 AI.<br>
-        Technocrats가 만들고, 현장이 검증합니다.
+      <div class="footer-logo">
+        <svg class="footer-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#4c1d95"/><line x1="22.5" y1="7.5" x2="9.5" y2="24.5" stroke="white" stroke-width="3.5" stroke-linecap="round"/></svg>
+        <span class="footer-logo-text">PAI</span>
       </div>
+      <div class="footer-desc">
+        국내 최초 의정용 AI 에이전트
+      </div>
+
     </div>
     <div class="footer-col">
       <h4>제품</h4>
@@ -658,18 +663,17 @@
     <div class="footer-col">
       <h4>연락처</h4>
       <ul>
+        <li>(주)테크노크라츠</li>
+        <li>대표이사 유민승</li>
+        <li>사업자등록번호 684-88-03424</li>
+        <li>경기도 용인시 수지구 호수로 132번길</li>
         <li><a href="mailto:hello@technocrats.kr">hello@technocrats.kr</a></li>
-        <li><a href="tel:000-0000-0000">000-0000-0000</a></li>
-        <li><a href="#">서울특별시 ○○구</a></li>
+        <li><a href="tel:01053078128">010-5307-8128</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <div>© 2026 Technocrats. All rights reserved.</div>
-    <div class="footer-links">
-      <a href="#">개인정보처리방침</a>
-      <a href="#">이용약관</a>
-    </div>
+    <span>© 2026 Technocrats Inc. All rights reserved.</span>
   </div>
 </footer>
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAI — 당신만을 위한 AI 에이전트</title>
+  <title>파이 — 당신만을 위한 AI 에이전트</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%234c1d95'/><line x1='23' y1='7' x2='9' y2='25' stroke='white' stroke-width='3.5' stroke-linecap='round'/></svg>">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
   <style>
@@ -40,7 +40,7 @@
     }
     .nav-logo a { display: flex; align-items: center; gap: 0.45rem; text-decoration: none; }
     .nav-logo-icon { width: 26px; height: 26px; flex-shrink: 0; }
-    .nav-logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: -0.5px; color: var(--black); }
+    .nav-logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: 0.12em; color: var(--black); }
     .nav-links { display: flex; align-items: center; gap: 2rem; }
     .nav-links a {
       font-size: 0.875rem; font-weight: 600; color: var(--text2);
@@ -362,7 +362,7 @@
     }
     .impact-num span {
       font-size: 0.42em; font-weight: 700; letter-spacing: -0.5px;
-      vertical-align: super; margin-left: 3px; color: #a78bfa;
+      vertical-align: super; margin-left: 3px; color: var(--black);
     }
     .impact-title {
       font-size: 0.975rem; font-weight: 700; color: var(--black);
@@ -385,7 +385,8 @@
       border-radius: var(--radius); padding: 2rem; transition: box-shadow 0.3s;
     }
     .quote-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.08); }
-    .quote-mark { font-size: 2.75rem; line-height: 1; color: #cccccc; font-family: Georgia, serif; margin-bottom: 0.5rem; }
+    .quote-mark { margin-bottom: 0.75rem; }
+    .quote-mark img { width: 52px; height: 52px; object-fit: contain; display: block; }
     .quote-text { font-size: 1.05rem; font-weight: 500; line-height: 1.75; margin-bottom: 1.25rem; color: var(--black); }
     .quote-author { font-size: 0.82rem; color: var(--text3); }
     .quote-author strong { color: var(--text2); font-weight: 700; }
@@ -446,21 +447,23 @@
       max-width: var(--max-w); margin: 0 auto;
       display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem;
     }
-    .footer-logo { font-size: 1.45rem; font-weight: 900; margin-bottom: 0.75rem; color: #ffffff; }
-    .footer-desc { font-size: 0.875rem; color: #888888; line-height: 1.7; }
+    .footer-logo { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.9rem; }
+    .footer-logo-icon { width: 28px; height: 28px; flex-shrink: 0; }
+    .footer-logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: 0.12em; color: #ffffff; }
+    .footer-desc { font-size: 0.875rem; color: #888888; line-height: 1.8; }
+    .footer-biz { margin-top: 0.6rem; font-size: 0.75rem; color: #555555; line-height: 1.8; }
     .footer-col h4 {
       font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
       text-transform: uppercase; color: #666666; margin-bottom: 1rem;
     }
     .footer-col ul { list-style: none; }
-    .footer-col ul li { margin-bottom: 0.5rem; }
+    .footer-col ul li { margin-bottom: 0.5rem; font-size: 0.875rem; color: #888888; }
     .footer-col ul li a { color: #888888; text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
     .footer-col ul li a:hover { color: #ffffff; }
     .footer-bottom {
       max-width: var(--max-w); margin: 2rem auto 0;
       padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08);
-      display: flex; align-items: center; justify-content: space-between;
-      font-size: 0.78rem; color: #666666;
+      text-align: center; font-size: 0.78rem; color: #555555;
     }
     .footer-links { display: flex; gap: 1.5rem; }
     .footer-links a { color: #666666; text-decoration: none; transition: color 0.2s; }
@@ -620,7 +623,7 @@
   <div class="container">
     <div class="personas-header">
       <div class="section-label" data-aos>사용자</div>
-      <h2 class="section-headline" data-aos data-aos-delay="1">PAI는 누구를 위한 AI인가요?</h2>
+      <h2 class="section-headline" data-aos data-aos-delay="1">파이는 누구를 위한 AI인가요?</h2>
       <p class="section-sub" style="margin:0.5rem auto 0;text-align:center;" data-aos data-aos-delay="2">초선부터 재선까지, 의원실 모두를 위해 설계했습니다.</p>
     </div>
     <div class="personas-grid">
@@ -635,7 +638,7 @@
           <li>지역 현안 따라잡는 데만 몇 달</li>
         </ul>
         <div class="persona-divider"></div>
-        <div class="persona-gains-label">PAI와 함께라면</div>
+        <div class="persona-gains-label">파이와 함께라면</div>
         <ul class="persona-gains">
           <li>우리 의회 조례 현황 즉시 파악</li>
           <li>지역 이슈 브리핑으로 임기 첫날부터 현장 감각</li>
@@ -654,7 +657,7 @@
           <li>아는데 시간이 없어 준비가 얕아지는 악순환</li>
         </ul>
         <div class="persona-divider"></div>
-        <div class="persona-gains-label">PAI와 함께라면</div>
+        <div class="persona-gains-label">파이와 함께라면</div>
         <ul class="persona-gains">
           <li>행감 질의서: 몇 주 → 몇 시간</li>
           <li>조례 발의: 전국 비교 + 초안, 당일 완성</li>
@@ -673,7 +676,7 @@
           <li>의원 요청에 즉시 대응하기 어려운 구조</li>
         </ul>
         <div class="persona-divider"></div>
-        <div class="persona-gains-label">PAI와 함께라면</div>
+        <div class="persona-gains-label">파이와 함께라면</div>
         <ul class="persona-gains">
           <li>조례·회의록·법령 통합검색, 즉시 결과</li>
           <li>의원별·시기별 발언 자동 요약 + 원문 링크</li>
@@ -783,8 +786,8 @@
 <section id="comparison">
   <div class="container">
     <div class="comparison-header">
-      <div class="section-label" data-aos>왜 PAI인가</div>
-      <h2 class="section-headline" data-aos data-aos-delay="1">범용 AI는 그럴듯한 답,<br>PAI는 정확한 답 + 출처</h2>
+      <div class="section-label" data-aos>왜 파이인가</div>
+      <h2 class="section-headline" data-aos data-aos-delay="1">범용 AI는 그럴듯한 답,<br>파이는 정확한 답 + 출처</h2>
       <p class="section-sub" style="margin:0.75rem auto 0;text-align:center;" data-aos data-aos-delay="2">
         "그냥 GPT 쓰면 안 돼?" — 의정활동에서는 안 됩니다.
       </p>
@@ -796,7 +799,7 @@
           <tr>
             <th style="width:35%">기능</th>
             <th>ChatGPT 등 범용 AI</th>
-            <th class="pai-col">PAI</th>
+            <th class="pai-col">파이</th>
           </tr>
         </thead>
         <tbody>
@@ -843,7 +846,7 @@
         시간이 돌아오면,<br>더 많은 것을 해낼 수 있습니다
       </h2>
       <p class="section-sub" data-aos data-aos-delay="2">
-        PAI의 효과는 단순히 '업무가 줄어든다'가 아닙니다.<br>
+        파이의 효과는 단순히 '업무가 줄어든다'가 아닙니다.<br>
         남는 시간으로 더 많은 조례를 발의하고, 더 날카롭게 발언하고, 더 자주 보도됩니다.
       </p>
     </div>
@@ -853,7 +856,7 @@
         <div class="impact-title">연간 자동화되는 업무 시간</div>
         <div class="impact-body">
           행감 준비·조례 리서치·회의록 분석·문서 초안까지.<br>
-          매달 30시간 이상, 연간 9주치 반복 업무를 PAI가 처리합니다.
+          매달 30시간 이상, 연간 9주치 반복 업무를 파이가 처리합니다.
         </div>
       </div>
       <div class="impact-item" data-aos data-aos-delay="1">
@@ -865,10 +868,10 @@
         </div>
       </div>
       <div class="impact-item" data-aos data-aos-delay="2">
-        <div class="impact-num" style="letter-spacing:-1px;">× 2</div>
-        <div class="impact-title">같은 임기, 두 배의 의정 성과</div>
+        <div class="impact-num" style="letter-spacing:-1px;">3배 이상</div>
+        <div class="impact-title">같은 임기, 세 배의 의정 성과</div>
         <div class="impact-body">
-          PAI는 일을 없애지 않습니다.<br>
+          파이는 일을 없애지 않습니다.<br>
           준비 시간이 줄어든 만큼, 조례를 더 발의하고<br>
           발언을 더 날카롭게 다듬고 보도자료를 더 자주 냅니다.
         </div>
@@ -884,23 +887,23 @@
   <div class="container">
     <div class="trust-header">
       <div class="section-label" data-aos>현장 검증</div>
-      <h2 class="section-headline" data-aos data-aos-delay="1">실제 의원실에서 쓰고 있습니다</h2>
+      <h2 class="section-headline" data-aos data-aos-delay="1">실제 의회에서 쓰고 있습니다</h2>
     </div>
     <div class="quotes-grid">
       <div class="quote-card" data-aos>
-        <div class="quote-mark">"</div>
+        <div class="quote-mark"><img src="성남시 로고.svg" alt="성남시의회 로고"></div>
         <div class="quote-text">한 사이트에서 다 되면 좋겠다고 늘 생각했어요.</div>
-        <div class="quote-author">— 정책지원관, <strong>○○시의회</strong></div>
+        <div class="quote-author">— 정책지원관, <strong>성남시의회</strong></div>
       </div>
       <div class="quote-card" data-aos data-aos-delay="1">
-        <div class="quote-mark">"</div>
+        <div class="quote-mark"><img src="강동구 로고.svg" alt="강동구의회 로고"></div>
         <div class="quote-text">바로바로 찾으니까 되게 효율적이에요.</div>
-        <div class="quote-author">— 의원, <strong>○○구의회</strong></div>
+        <div class="quote-author">— 의원, <strong>강동구의회</strong></div>
       </div>
     </div>
     <div class="pilot-badge" data-aos>
       <span class="pilot-dot"></span>
-      현재 <strong>○○시의회, ○○구의회</strong>와 파일럿 진행 중
+      현재 <strong>성남시의회, 강동구의회</strong>와 파일럿 진행 중
     </div>
   </div>
 </section>
@@ -936,10 +939,6 @@
         <div class="security-title">제로 유지보수</div>
         <div class="security-desc">SaaS 방식. 서버 설치 없음. 의회 IT팀 개입 불필요.</div>
       </div>
-    </div>
-    <div class="security-quote" data-aos>
-      <p>"내가 하고 있는 걸 오픈하는 걸 별로 안 좋아하시는 경향이 있어요."</p>
-      <cite>— 정책지원관 인터뷰 중</cite>
     </div>
   </div>
 </section>
@@ -996,7 +995,7 @@
             <input type="text" placeholder="홍길동" required>
           </div>
           <div class="form-group">
-            <label>의회명 *</label>
+            <label>기관/단체명 *</label>
             <input type="text" placeholder="예: 강동구의회, 성남시의회" required>
           </div>
         </div>
@@ -1013,8 +1012,22 @@
             </select>
           </div>
           <div class="form-group">
-            <label>연락처 *</label>
-            <input type="text" placeholder="이메일 또는 전화번호" required>
+            <label>도입 범위 *</label>
+            <select required>
+              <option value="" disabled selected>선택하세요</option>
+              <option>개인</option>
+              <option>기관</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>이메일 *</label>
+            <input type="email" placeholder="example@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>전화번호 *</label>
+            <input type="tel" placeholder="010-0000-0000" required>
           </div>
         </div>
         <button class="btn-submit" id="submit-btn">도입 문의하기 →</button>
@@ -1022,7 +1035,7 @@
           또는 직접 문의:
           <a href="mailto:hello@technocrats.kr">hello@technocrats.kr</a>
           &nbsp;·&nbsp;
-          <a href="tel:000-0000-0000">000-0000-0000</a>
+          <a href="tel:01053078128">010-5307-8128</a>
         </div>
       </div>
     </div>
@@ -1033,11 +1046,14 @@
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-logo">PAI</div>
-      <div class="footer-desc">
-        지방의회를 위한 의정 특화 AI.<br>
-        Technocrats가 만들고, 현장이 검증합니다.
+      <div class="footer-logo">
+        <svg class="footer-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#4c1d95"/><line x1="22.5" y1="7.5" x2="9.5" y2="24.5" stroke="white" stroke-width="3.5" stroke-linecap="round"/></svg>
+        <span class="footer-logo-text">PAI</span>
       </div>
+      <div class="footer-desc">
+        국내 최초 의정용 AI 에이전트
+      </div>
+
     </div>
     <div class="footer-col">
       <h4>제품</h4>
@@ -1051,18 +1067,17 @@
     <div class="footer-col">
       <h4>연락처</h4>
       <ul>
+        <li>(주)테크노크라츠</li>
+        <li>대표이사 유민승</li>
+        <li>사업자등록번호 684-88-03424</li>
+        <li>경기도 용인시 수지구 호수로 132번길</li>
         <li><a href="mailto:hello@technocrats.kr">hello@technocrats.kr</a></li>
-        <li><a href="tel:000-0000-0000">000-0000-0000</a></li>
-        <li><a href="#">서울특별시 ○○구</a></li>
+        <li><a href="tel:01053078128">010-5307-8128</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <div>© 2026 Technocrats. All rights reserved.</div>
-    <div class="footer-links">
-      <a href="#">개인정보처리방침</a>
-      <a href="#">이용약관</a>
-    </div>
+    <span>© 2026 Technocrats Inc. All rights reserved.</span>
   </div>
 </footer>
 
@@ -1107,7 +1122,7 @@
           <span style="color:#aaa">ChatGPT 등</span><span>${r.gpt}</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:.4rem 0;font-size:.82rem">
-          <span style="color:#111;font-weight:700">PAI</span><span>${r.pai}</span>
+          <span style="color:#111;font-weight:700">파이</span><span>${r.pai}</span>
         </div>
       </div>`);
   });
