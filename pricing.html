@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PAI 가격 — 의정 특화 AI 에이전트</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%234c1d95'/><line x1='22.5' y1='7.5' x2='9.5' y2='24.5' stroke='white' stroke-width='3.5' stroke-linecap='round'/></svg>">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,7 +38,9 @@
       backdrop-filter: blur(18px);
       border-bottom: 1px solid var(--border);
     }
-    .nav-logo a { font-size: 1.45rem; font-weight: 900; letter-spacing: -0.5px; color: var(--black); text-decoration: none; }
+    .nav-logo a { display: flex; align-items: center; gap: 0.45rem; text-decoration: none; }
+    .nav-logo-icon { width: 26px; height: 26px; flex-shrink: 0; }
+    .nav-logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: -0.5px; color: var(--black); }
     .nav-links { display: flex; align-items: center; gap: 2rem; }
     .nav-links a {
       font-size: 0.875rem; font-weight: 600; color: var(--text2);
@@ -372,13 +375,16 @@
 
 <!-- NAV -->
 <nav id="main-nav">
-  <div class="nav-logo"><a href="index.html">PAI</a></div>
+  <div class="nav-logo"><a href="index.html">
+    <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#4c1d95"/><line x1="22.5" y1="7.5" x2="9.5" y2="24.5" stroke="white" stroke-width="3.5" stroke-linecap="round"/></svg>
+    <span class="nav-logo-text">PAI</span>
+  </a></div>
   <div class="nav-links">
     <a href="features.html">기능</a>
     <a href="pricing.html" class="active">가격</a>
   </div>
   <div class="nav-right">
-    <a href="index.html#cta" class="nav-cta">데모 신청</a>
+    <a href="index.html#cta" class="nav-cta">도입 문의</a>
   </div>
 </nav>
 
@@ -396,7 +402,7 @@
       인건비의 몇 분의 일로, 수천 명 지원관의 역량을.
     </p>
     <div class="page-hero-ctas" data-aos data-aos-delay="3">
-      <a href="index.html#cta" class="btn-primary">무료 데모 신청</a>
+      <a href="index.html#cta" class="btn-primary">도입 문의</a>
       <a href="#faq" class="btn-secondary">자주 묻는 질문</a>
     </div>
   </div>
@@ -413,7 +419,7 @@
     </div>
     <div class="value-stat" data-aos data-aos-delay="1">
       <div class="value-item-num">30분<span>이면</span></div>
-      <div class="value-item-label">무료 데모로 확인<br>귀 의회 실제 데이터로 시연</div>
+      <div class="value-item-label">도입 문의로 확인<br>귀 의회 실제 데이터로 시연</div>
     </div>
     <div class="value-stat" data-aos data-aos-delay="2">
       <div class="value-item-num">6주<span>면</span></div>
@@ -456,7 +462,7 @@
           <li><span class="feat-check">✓</span> 법령 · 조례 변경 실시간 알림</li>
           <li><span class="feat-check">✓</span> 개별 계정 격리 (완전 비공개)</li>
         </ul>
-        <a href="index.html#cta" class="plan-cta primary-cta">30분 무료 데모 신청</a>
+        <a href="index.html#cta" class="plan-cta primary-cta">도입 문의</a>
       </div>
 
       <!-- 기관 도입 플랜 -->
@@ -484,7 +490,7 @@
 
     <div class="pricing-note" data-aos>
       <span class="note-icon">💡</span>
-      <span>도입 결정 전에 <strong>30분 데모를 먼저 요청하세요.</strong> 귀 의회 실제 데이터로 직접 확인하신 후 결정하셔도 됩니다. 비용 없이 경험 먼저입니다.</span>
+      <span>도입 결정 전에 <strong>도입 문의를 먼저 주세요.</strong> 귀 의회 실제 데이터로 직접 확인하신 후 결정하셔도 됩니다. 비용 없이 경험 먼저입니다.</span>
     </div>
   </div>
 </section>
@@ -537,7 +543,67 @@
           <span class="faq-chevron">＋</span>
         </button>
         <div class="faq-a">
-          <p>4단계, 최소 6주면 완료됩니다. 데모(30분) → 데이터 세팅(1~2주) → 시범 운영(2~4주) → 정식 도입 순서입니다. 의회 측에서 서버를 설치하거나 IT 작업을 할 필요가 없습니다. Technocrats가 모든 세팅을 담당하고, 온보딩 교육까지 포함됩니다. <a href="features.html#onboarding">도입 절차 자세히 보기 →</a></p>
+          <p>4단계, 최소 6주면 완료됩니다. 도입 문의(30분 시연) → 데이터 세팅(1~2주) → 시범 운영(2~4주) → 정식 도입 순서입니다. 의회 측에서 서버를 설치하거나 IT 작업을 할 필요가 없습니다. Technocrats가 모든 세팅을 담당하고, 온보딩 교육까지 포함됩니다. <a href="features.html#onboarding">도입 절차 자세히 보기 →</a></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>기관 도입 가격은 어떻게 되나요?</span>
+          <span class="faq-chevron">＋</span>
+        </button>
+        <div class="faq-a">
+          <p>기관 도입은 초기 구축 비용과 월정 이용료 두 가지로 구성됩니다. 초기 구축 비용은 귀 의회의 회의록·조례 데이터 인덱싱, 전용 환경 세팅, 커스텀 설정 등에 해당하며 개인 요금제보다 큰 규모입니다. 그러나 인원당 월정 이용료는 개인 요금제 대비 현저히 저렴합니다. 의회 전체 인원을 함께 도입할수록 1인당 비용이 낮아지는 구조로, 정책지원관 전원이 사용하는 경우 개인 구독보다 비용 효율이 높습니다. 정확한 견적은 의회 규모와 사용 인원에 따라 달라지므로, 도입 문의를 통해 맞춤 견적을 받아보세요.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>기관 도입 시 어떤 혜택이 있나요?</span>
+          <span class="faq-chevron">＋</span>
+        </button>
+        <div class="faq-a">
+          <p>기관 도입 시 개인 요금제에 없는 다음 혜택이 제공됩니다. ① <strong>의회 전용 환경</strong> — 귀 의회의 브랜딩과 데이터가 반영된 전용 공간으로 세팅됩니다. ② <strong>맞춤 온보딩 교육</strong> — Technocrats 팀이 직접 방문하거나 원격으로 의원·지원관 대상 사용 교육을 진행합니다. ③ <strong>전담 고객 지원</strong> — 개인 요금제 대비 우선 기술 지원과 빠른 응대가 제공됩니다. ④ <strong>신기능 우선 접근</strong> — 합성여론 등 베타 기능을 일반 출시 전에 먼저 체험하실 수 있습니다. ⑤ <strong>데이터 커스텀 세팅</strong> — 특정 위원회, 특정 회기 데이터에 집중한 검색 환경 구성이 가능합니다.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>PAI가 제공하는 데이터는 신뢰할 수 있나요?</span>
+          <span class="faq-chevron">＋</span>
+        </button>
+        <div class="faq-a">
+          <p>PAI는 추측이나 일반 지식 기반이 아닌, 공식 공공 출처의 데이터를 직접 인덱싱하여 사용합니다. 조례 검색은 전국 자치법규정보시스템(ELIS) 데이터를 기반으로 하며, 회의록 검색은 각 의회가 제공하는 공식 회의록을 토대로 합니다. AI가 답변할 때는 출처 문서를 함께 표시하므로, 어떤 근거로 답변했는지 바로 확인하실 수 있습니다. 범용 AI처럼 없는 정보를 만들어내는 '환각' 위험을 최소화하기 위해 RAG(검색 기반 생성) 방식으로 작동합니다.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>구매 전에 먼저 체험해볼 수 있나요?</span>
+          <span class="faq-chevron">＋</span>
+        </button>
+        <div class="faq-a">
+          <p>네, 가능합니다. 도입 문의를 신청하시면 귀 의회의 실제 데이터를 활용한 30분 맞춤 시연을 진행합니다. 범용 데모가 아니라, 실제 귀 의회의 회의록과 조례 데이터를 사용해 PAI가 어떻게 작동하는지 직접 보실 수 있습니다. 시연 이후 도입 여부를 결정하셔도 늦지 않습니다.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>AI 답변이 틀릴 수도 있지 않나요? 의정 활동에 믿고 쓸 수 있나요?</span>
+          <span class="faq-chevron">＋</span>
+        </button>
+        <div class="faq-a">
+          <p>어떤 AI도 100% 정확을 보장하지 않으며, PAI도 마찬가지입니다. 다만 PAI는 이 위험을 최소화하기 위한 두 가지 설계 원칙을 따릅니다. 첫째, 답변과 함께 원문 출처를 항상 제공합니다. 의원·지원관이 직접 원문을 확인하고 최종 판단하는 구조입니다. 둘째, 범용 AI처럼 데이터가 없는 내용을 지어내는 대신, 실제 문서가 존재할 때만 답변하도록 설계했습니다. PAI는 최종 결정자가 아니라, 정보 탐색과 초안 작업을 빠르게 해주는 보조 도구로 사용하시길 권장합니다.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>합성여론(베타) 기능은 어떻게 사용할 수 있나요?</span>
+          <span class="faq-chevron">＋</span>
+        </button>
+        <div class="faq-a">
+          <p>합성여론은 현재 베타 테스트 단계로, 일반 출시 전 파일럿 의회에서 선행 체험이 가능합니다. 도입 문의를 신청하시면 시연 시 합성여론 기능도 함께 체험하실 수 있습니다. 전문 리서치 기관에 의뢰 시 수천만원·수주 이상 소요되던 여론 시뮬레이션을, PAI에서는 조례안·발의문을 입력하는 것만으로 수초 내에 모의 결과를 확인하실 수 있습니다. 정식 출시 전 알림을 받고 싶으시면 도입 문의 폼에 관심 내용을 남겨주세요.</p>
         </div>
       </div>
 
@@ -563,7 +629,7 @@
         직접 보시고 판단하세요.
       </p>
       <div class="cta-btns" data-aos data-aos-delay="2">
-        <a href="index.html#cta" class="btn-white">데모 신청하기 →</a>
+        <a href="index.html#cta" class="btn-white">도입 문의하기 →</a>
         <a href="features.html" class="btn-outline-white">기능 살펴보기</a>
       </div>
     </div>
@@ -586,7 +652,7 @@
         <li><a href="features.html">기능 소개</a></li>
         <li><a href="pricing.html">가격</a></li>
         <li><a href="features.html#security">보안</a></li>
-        <li><a href="index.html#cta">데모 신청</a></li>
+        <li><a href="index.html#cta">도입 문의</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -608,7 +674,7 @@
 </footer>
 
 <div class="mobile-sticky-cta">
-  <a href="index.html#cta" class="btn-primary">30분 데모 신청</a>
+  <a href="index.html#cta" class="btn-primary">도입 문의</a>
 </div>
 
 <script>
