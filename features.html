@@ -518,7 +518,8 @@
     @media (max-width: 900px) {
       section { padding: 72px 1.5rem; }
       nav { padding: 0 1.5rem; }
-      .nav-links { display: none; }
+      .nav-links { gap: 1.2rem; }
+      .nav-links a { font-size: 0.8rem; }
 
       .complement-grid { grid-template-columns: 1fr; }
       .comp-divider { padding-top: 0; }
@@ -546,6 +547,60 @@
     @media (max-width: 480px) {
       .docs-grid { grid-template-columns: 1fr; }
     }
+
+    /* beta badge */
+    .beta-badge {
+      display: inline-block; font-size: 0.6rem; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: #7c3aed; border: 1.5px solid #7c3aed;
+      border-radius: 100px; padding: 0.15rem 0.55rem;
+      vertical-align: middle;
+    }
+    .solution-tag-row { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; }
+    .solution-tag-row .solution-tag { margin-bottom: 0; }
+
+    /* opinion mock UI */
+    .opinion-mock-input {
+      display: flex; align-items: center; gap: 0.5rem;
+      border: 1px solid var(--border); border-radius: 6px;
+      padding: 0.38rem 0.75rem; background: #ffffff;
+    }
+    .opinion-mock-input-icon { font-size: 0.72rem; }
+    .opinion-mock-input-text { font-size: 0.71rem; color: var(--text); flex: 1; font-weight: 500; }
+    .opinion-mock-input-btn {
+      font-size: 0.6rem; font-weight: 700;
+      background: var(--black); color: #fff;
+      border-radius: 4px; padding: 0.18rem 0.5rem;
+    }
+    .opinion-mock-section-label {
+      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--text3); margin-bottom: 0.3rem;
+    }
+    .opinion-mock-bar-row {
+      display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem;
+    }
+    .opinion-mock-bar-label { font-size: 0.68rem; color: var(--text2); width: 2.5rem; flex-shrink: 0; }
+    .opinion-mock-bar-track {
+      flex: 1; height: 8px; background: #eeeeee; border-radius: 100px; overflow: hidden;
+    }
+    .opinion-mock-bar-fill {
+      height: 100%; border-radius: 100px; background: var(--black);
+    }
+    .opinion-mock-bar-fill.neg { background: #d1d5db; }
+    .opinion-mock-bar-pct { font-size: 0.68rem; font-weight: 700; color: var(--text); width: 2.2rem; text-align: right; flex-shrink: 0; }
+    .opinion-mock-region-row {
+      display: flex; gap: 0.35rem; flex-wrap: wrap;
+    }
+    .opinion-mock-region {
+      font-size: 0.6rem; border: 1px solid var(--border);
+      border-radius: 4px; padding: 0.15rem 0.45rem; color: var(--text2);
+    }
+    .opinion-mock-region.high { border-color: var(--black); color: var(--black); font-weight: 700; }
+    .opinion-mock-concern-item {
+      font-size: 0.68rem; color: var(--text2); line-height: 1.5;
+      padding-left: 0.8rem; position: relative;
+    }
+    .opinion-mock-concern-item::before { content: "·"; position: absolute; left: 0.2rem; }
   </style>
 </head>
 <body>
@@ -826,6 +881,61 @@
             <span class="mock-pill">다운로드</span>
             <span class="mock-pill primary">수정하기</span>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑤ 합성여론 -->
+    <div class="solution-block" data-aos>
+      <div class="solution-content">
+        <div class="solution-tag-row">
+          <div class="solution-tag">⑤ 합성여론</div>
+          <span class="beta-badge">Beta</span>
+        </div>
+        <div class="solution-title">발의 전에, 여론 반응을 먼저 확인합니다</div>
+        <div class="before-after">
+          <div class="ba-box">
+            <div class="ba-label">BEFORE</div>
+            <div class="ba-text">전문 리서치 기관에 여론조사 의뢰 → 수천만원 비용 + 수주 이상 대기 → 발의 타이밍 놓침</div>
+          </div>
+          <div class="ba-box after">
+            <div class="ba-label al">AFTER ✓</div>
+            <div class="ba-text">조례·발의문·SNS 문구 입력 → 수초 내 자치구·전국 단위 모의 여론 결과 — 추가 비용 없음</div>
+          </div>
+        </div>
+      </div>
+      <div class="solution-screenshot">
+        <div class="frame-bar">
+          <div class="frame-dot"></div><div class="frame-dot"></div><div class="frame-dot"></div>
+          <div class="frame-url">app.pai.kr · 합성여론</div>
+        </div>
+        <div class="mock-body">
+          <div class="opinion-mock-input">
+            <span class="opinion-mock-input-icon">📝</span>
+            <span class="opinion-mock-input-text">청년 기본소득 조례 발의안</span>
+            <span class="opinion-mock-input-btn">시뮬레이션</span>
+          </div>
+          <div class="opinion-mock-section-label">지지율 시뮬레이션 — 전국</div>
+          <div class="opinion-mock-bar-row">
+            <span class="opinion-mock-bar-label">지지</span>
+            <div class="opinion-mock-bar-track"><div class="opinion-mock-bar-fill" style="width:62%"></div></div>
+            <span class="opinion-mock-bar-pct">62%</span>
+          </div>
+          <div class="opinion-mock-bar-row">
+            <span class="opinion-mock-bar-label">반대</span>
+            <div class="opinion-mock-bar-track"><div class="opinion-mock-bar-fill neg" style="width:28%"></div></div>
+            <span class="opinion-mock-bar-pct">28%</span>
+          </div>
+          <div class="opinion-mock-section-label">지역별 반응</div>
+          <div class="opinion-mock-region-row">
+            <span class="opinion-mock-region high">서울 67%↑</span>
+            <span class="opinion-mock-region high">경기 64%↑</span>
+            <span class="opinion-mock-region">대구 51%</span>
+            <span class="opinion-mock-region">부산 55%</span>
+          </div>
+          <div class="opinion-mock-section-label">주요 우려 사항</div>
+          <div class="opinion-mock-concern-item">재원 마련 방안 불명확 (응답자 41% 언급)</div>
+          <div class="opinion-mock-concern-item">기존 복지와 중복 가능성 (29% 언급)</div>
         </div>
       </div>
     </div>

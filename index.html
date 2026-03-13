@@ -264,7 +264,7 @@
     .solution-header { text-align: center; margin-bottom: 3.5rem; }
 
     .solution-overview-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
+      display: grid; grid-template-columns: repeat(2, 1fr);
       gap: 1.25rem; margin-bottom: 2.5rem;
     }
     .sol-card {
@@ -286,6 +286,19 @@
       border-radius: 100px; padding: 0.22rem 0.75rem;
     }
     .sol-link-row { text-align: center; }
+    .sol-card-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.9rem; }
+    .sol-card-header .sol-num { margin-bottom: 0; }
+
+    /* beta badge */
+    .beta-badge {
+      display: inline-block; font-size: 0.6rem; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: #7c3aed; border: 1.5px solid #7c3aed;
+      border-radius: 100px; padding: 0.15rem 0.55rem;
+    }
+    @media (min-width: 900px) {
+      .sol-card:nth-child(5) { grid-column: span 2; }
+    }
 
     /* ── COMPARISON ── */
     #comparison { background: #ffffff; }
@@ -454,7 +467,8 @@
     @media (max-width: 900px) {
       section { padding: 72px 1.5rem; }
       nav { padding: 0 1.5rem; }
-      .nav-links { display: none; }
+      .nav-links { gap: 1.2rem; }
+      .nav-links a { font-size: 0.8rem; }
 
       .hero-inner { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
       .hero-sub, .hero-eyebrow { margin-left: auto; margin-right: auto; }
@@ -700,6 +714,16 @@
         <div class="sol-title">백지 앞에서<br>막히지 않습니다</div>
         <div class="sol-desc">발언문·조례 초안·질의서·보도자료, 데이터 기반 초안을 즉시.</div>
         <div class="sol-time">반나절 → 수분</div>
+      </div>
+      <div class="sol-card" data-aos data-aos-delay="4">
+        <div class="sol-card-header">
+          <div class="sol-num">⑤ 합성여론</div>
+          <span class="beta-badge">Beta</span>
+        </div>
+        <div class="sol-icon">📊</div>
+        <div class="sol-title">발의 전에,<br>여론 반응을 먼저 봅니다</div>
+        <div class="sol-desc">조례·발의문·SNS 문구를 입력하면, 자치구·전국 단위 모의 여론 반응을 즉시 시뮬레이션합니다. 전문 리서치 기관 의뢰(수천만원·수주 소요) 없이, 수초 안에.</div>
+        <div class="sol-time">수천만원·수주 → 수초·무료</div>
       </div>
     </div>
 
